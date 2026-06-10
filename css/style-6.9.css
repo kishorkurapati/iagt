@@ -579,8 +579,8 @@ nav.scrolled {
 
 /* ═══════════════ TYPOGRAPHY ═══════════════ */
 h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; }
-h1 { font-size: clamp(2rem, 4vw, 3.6rem); font-weight: 900; color: var(--text-primary); }
-h2 { font-size: clamp(1.6rem, 3vw, 2.6rem); font-weight: 800; color: var(--text-primary); }
+h1 { font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 900; color: var(--text-primary); }
+h2 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; color: var(--text-primary); }
 h3 { font-size: 1.5rem; font-weight: 600; color: var(--text-primary); }
 p  { font-size: 1rem; line-height: 1.75; color: var(--text-secondary); }
 
@@ -1487,6 +1487,13 @@ html { transition: background-color 0.35s ease, color 0.35s ease; }
 @media (max-width: 960px) {
   .bylaws-grid { grid-template-columns: 1fr !important; }
 }
+
+/* Home featured event — stack on tablet */
+@media (max-width: 760px) {
+  .home-featured-evt { grid-template-columns: 1fr !important; }
+  .home-featured-evt .evt-poster { padding: 24px 24px 0; }
+  .home-featured-evt .evt-info   { padding: 28px 24px 36px; }
+}
 /* QR + plans layout stacks on mobile */
 @media (max-width: 768px) {
   .qr-plans-grid { grid-template-columns: 1fr !important; }
@@ -1601,7 +1608,7 @@ html { transition: background-color 0.35s ease, color 0.35s ease; }
   .hero { padding: 40px 20px 36px; min-height: calc(100vh - 64px); }
   .hero-card-3d { padding: 36px 24px; border-radius: 20px; }
   .hero-gold-line { display: none; }
-  h1 { font-size: clamp(1.8rem, 7vw, 2.6rem); }
+  h1 { font-size: clamp(2.2rem, 9vw, 3.2rem); }
   .hero-sub { font-size: 1rem; }
   .hero-desc { font-size: 1rem; margin-bottom: 36px; }
   .hero-btns { flex-direction: column; align-items: stretch; gap: 12px; }
@@ -1615,7 +1622,7 @@ html { transition: background-color 0.35s ease, color 0.35s ease; }
   .stat-label{ font-size: 0.72rem; }
 
   /* Typography */
-  h2 { font-size: clamp(1.4rem, 6vw, 2rem); }
+  h2 { font-size: clamp(1.7rem, 7vw, 2.4rem); }
   h3 { font-size: 1.25rem; }
   p  { font-size: 0.95rem; }
   .eyebrow { font-size: 0.65rem; }
@@ -1694,8 +1701,8 @@ html { transition: background-color 0.35s ease, color 0.35s ease; }
   .annual-grid  { grid-template-columns: 1fr; }
   .board-grid   { grid-template-columns: 1fr; }
   .stats-strip  { grid-template-columns: 1fr 1fr; }
-  h1 { font-size: 1.7rem; }
-  h2 { font-size: 1.4rem; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
 }
 /* Parent */
 .has-submenu {
